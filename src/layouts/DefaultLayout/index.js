@@ -7,29 +7,29 @@ import PageBody from "../../components/PageBody";
 
 class DefaultLayout extends Component {
 
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render() {
+  render() {
 
-        let {outsideBody, children, className} = this.props;
+    let {outsideBody, children, className} = this.props;
 
-        return (
-            <Fragment>
+    return (
+      <Fragment>
 
-                <TopNav/>
+        <TopNav/>
 
-                {children}
+        {children}
 
-                <Footer/>
+        <Footer/>
 
-            </Fragment>
-        )
-    }
+      </Fragment>
+    )
+  }
 }
 
 export default compose(
-    // withStyles(styles),
-    withWidth()
+  // withStyles(styles),
+  withWidth()
 )(DefaultLayout);

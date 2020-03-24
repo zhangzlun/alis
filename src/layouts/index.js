@@ -1,2 +1,2 @@
+// eslint-disable-next-line import/prefer-default-export
 export { default as DefaultLayout } from './DefaultLayout';
-export { default as BlogLayout } from './BlogLayout';
