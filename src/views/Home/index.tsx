@@ -6,11 +6,11 @@ import {DefaultLayout} from "../../layouts";
 import {Link} from 'react-router-dom';
 import News from "./components/News";
 import Carousel from "./components/Carousel";
-import PageBody from "../../components/PageBody";
+import PageBody from "../../components/tmp/PageBody";
 import Solution from "./components/Solution";
-import Maincol from "../../components/Maincol";
-import Sidecol from "../../components/Sidecol";
-import BoxHomeContact from "../../components/BoxHomeContact";
+import Maincol from "../../components/tmp/Maincol";
+import Sidecol from "../../components/tmp/Sidecol";
+import BoxHomeContact from "../../components/tmp/BoxHomeContact";
 
 const useStyles = makeStyles(theme => (
     {

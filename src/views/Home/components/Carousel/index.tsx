@@ -78,7 +78,7 @@ let carouselList = [
     `＜我々にできること＞\nお客様に安心感を与えること\n社員の成長に心掛けていくこと\n企業市民として、社会に貢献すること`
 ];
 
-class Carousel extends Component{
+class Carousel extends Component {
 
     constructor(props) {
         super(props);

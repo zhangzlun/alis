@@ -2,16 +2,16 @@ import React from 'react';
 import {DefaultLayout} from "../../layouts";
 import './index.css';
 import Grid from '@material-ui/core/Grid';
-import Maincol from "../../components/Maincol";
-import PageBody from "../../components/PageBody";
-import BoxH1Tt1 from "../../components/BoxH1Ttl";
-import TopicPath from "../../components/TopicPath";
+import Maincol from "../../components/tmp/Maincol";
+import PageBody from "../../components/tmp/PageBody";
+import BoxH1Tt1 from "../../components/tmp/BoxH1Ttl";
+import TopicPath from "../../components/tmp/TopicPath";
 import {makeStyles, useTheme} from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery/useMediaQuery";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import {a11yProps} from "../../util/tool";
-import TabPanel from "../../components/TabPanel";
+import TabPanel from "../../components/tmp/TabPanel";
 
 
 const useStyles = makeStyles(theme => ({

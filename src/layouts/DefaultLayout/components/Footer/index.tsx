@@ -1,6 +1,6 @@
 import React from 'react';
 import {makeStyles} from "@material-ui/core";
-import BoxHomeContact from "../../../../components/BoxHomeContact";
+import BoxHomeContact from "../../../../components/tmp/BoxHomeContact";
 
 
 const useStyles = makeStyles(theme => ({

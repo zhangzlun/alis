@@ -5,11 +5,11 @@ import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import DefaultLayout from "../../layouts/DefaultLayout";
-import PageBody from "../../components/PageBody";
-import Maincol from "../../components/Maincol";
-import TabPanel from "../../components/TabPanel";
-import BoxH1Tt1 from "../../components/BoxH1Ttl";
-import TopicPath from "../../components/TopicPath";
+import PageBody from "../../components/tmp/PageBody";
+import Maincol from "../../components/tmp/Maincol";
+import TabPanel from "../../components/tmp/TabPanel";
+import BoxH1Tt1 from "../../components/tmp/BoxH1Ttl";
+import TopicPath from "../../components/tmp/TopicPath";
 
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
