@@ -3,42 +3,47 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.3.3",
-    "history": "^4.7.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.0",
-    "recompose": "^0.30.0",
-    "react-app-polyfill": "1.0.4",
-    "react-alice-carousel": "1.15.3",
-    "react-animated-css": "^1.2.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "IE 11",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version",
-      "IE 11"
-    ]
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "koa": "^2.11.0",
+    "next": "9.3.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
   },
   "devDependencies": {
-    "prettier": "1.18.2"
+    "@babel/core": "^7.9.0",
+    "@reduxjs/toolkit": "^1.2.5",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-backgrounds": "^5.3.17",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-knobs": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addon-storysource": "^5.3.17",
+    "@storybook/addon-viewport": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react": "^5.3.17",
+    "@types/node": "^13.9.2",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^5.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.19.1",
+    "react-redux": "^7.2.0",
+    "redux-logger": "^3.0.6",
+    "sanitize.css": "^11.0.0",
+    "styled-components": "^5.0.1",
+    "styled-media-query": "^2.1.2",
+    "typescript": "^3.8.3"
   }
 }

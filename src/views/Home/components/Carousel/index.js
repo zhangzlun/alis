@@ -33,7 +33,7 @@ const styles = (theme) => ({
     },
     hcsstest:{
         position: "absolute",
-        color: "#afafaf",
+    color: "#e2dede",
         fontFamily: theme.fontFamily,
         fontWeight: 700,
         textShadow:"black 0.1em 0.1em 0.2em",

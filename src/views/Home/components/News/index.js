@@ -5,7 +5,7 @@ import {makeStyles} from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
 
     boxHomeInfo: {
-        padding:"0 15px",
+        padding: "0 15px",
 
         "& h2": {
             float: "left",
@@ -22,9 +22,9 @@ const useStyles = makeStyles(theme => ({
         "& .date": {
             float: "left",
             width: " 140px",
-            [theme.breakpoints.down('md')]: {
-                width: "30%",
-            },
+            [theme.breakpoints.down("md")]: {
+                width: "30%"
+            }
         },
         "& .cate": {
             float: "left",
@@ -33,10 +33,10 @@ const useStyles = makeStyles(theme => ({
             padding: "1px 0 0",
             fontSize: "78.6%",
             textAlign: "center",
-            background: "#f2f2f2",
-            [theme.breakpoints.down('md')]: {
-                width: "15%",
-            },
+            background: "#e5e5e5",
+            [theme.breakpoints.down("md")]: {
+                width: "15%"
+            }
         },
         "& .ttl": {
             margin: "0 0 0 260px",
@@ -51,6 +51,28 @@ const useStyles = makeStyles(theme => ({
 let data = [
     {
         cate: "お知らせ",
+        date: "2020年02月07日",
+        ttl:
+            "新型コロナウイルス感染防止のため、社員にマスクと消毒剤を配布しました。"
+    },
+    {
+        cate: "お知らせ",
+        date: "2020年02月03日",
+        ttl:
+            "新型コロナウイルス感染防止のため、日本語教育と技術講習会を一時的に停止しました。"
+    },
+    {
+        cate: "お知らせ",
+        date: "2020年01月23日",
+        ttl: "新年会を開催しました。"
+    },
+    {
+        cate: "お知らせ",
+        date: "2020年12月09日",
+        ttl: "忘年会を開催しました。"
+    },
+    {
+        cate: "お知らせ",
         date: "2019年10月10日",
         ttl: "新入社員向けITエンジニア研修開始（第一期 JavaWeb編）"
     },
@@ -62,12 +84,12 @@ let data = [
     {
         cate: "お知らせ",
         date: "2019年10月01日",
-        ttl: "会社設立懇親会を開催"
+        ttl: "会社設立懇親会を開催しました。"
     },
     {
         cate: "お知らせ",
         date: "2019年08月08日",
-        ttl: "株式会社往来情報サービス本社を設立"
+        ttl: "株式会社往来情報サービス本社を設立しました。"
     }
 ];
 
@@ -89,7 +111,7 @@ export default function News() {
                         <li>
                             <div className="date">{value.date}</div>
                             <div className="cate">{value.cate}</div>
-                            <a href="/">
+                            <a>
                                 <div className="ttl">{value.ttl}</div>
                             </a>
                         </li>
