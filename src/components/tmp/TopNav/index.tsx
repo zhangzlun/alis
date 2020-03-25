@@ -45,7 +45,7 @@ export default function TopNav() {
     <div className={classes.header}>
       <div className={classes.headerInner}>
         <nav className="navbar navbar-expand-lg navbar-light">
-          <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/">
             <img
               className={classes.inmhs}
               src="images/IMG_9257.png"
@@ -67,7 +67,7 @@ export default function TopNav() {
 
           <div
             className={`collapse navbar-collapse ${classes.headerText}`}
-            id="navbarNavDropdown"
+            id="navbarNavDropdown">
             <ul className="navbar-nav">
                       {
                                 dataList.map((value) => (

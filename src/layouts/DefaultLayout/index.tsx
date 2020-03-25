@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import TopNav from '../../components/top_nav';
+import TopNav from '../../components/TopNav';
 // import Footer from './components/Footer';
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -11,7 +11,7 @@ class DefaultLayout extends Component {
       <>
         <TopNav />
         {children}
-        {/*<Footer />*/}
+        {/* <Footer /> */}
       </>
     );
   }

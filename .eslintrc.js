@@ -45,7 +45,8 @@ module.exports = {
     "react/jsx-filename-extension": [1, {"extensions": [".ts", ".tsx"]}],
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "import/extensions": ["error", "never" ],
-    '@typescript-eslint/no-explicit-any': 'off',
+    "typescript-eslint/no-explicit-any": "off",
+    "react/jsx-props-no-spreading": "off",
     "jsx-a11y/label-has-associated-control": [ 2, {
       "labelComponents": ["CustomInputLabel"],
       "labelAttributes": ["label"],

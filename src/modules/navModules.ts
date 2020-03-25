@@ -18,7 +18,7 @@ const navModule = createSlice({
   name: 'nav',
   initialState: defaultData,
   reducers: {
-    SET_DATA: (state, action: Array<string>) => state.push(action.payload),
+    SET_DATA: (state, action) => [...state, ...action.payload],
   },
 });
 

@@ -1,13 +1,14 @@
 import * as React from 'react';
 import App, { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
-// Provider を読み込む
 import { Provider } from 'react-redux';
-
 import setupStore from '../store';
-// テーマを必要に応じて設定
-const theme = {};
-// ストアを作成
+import GlobalStyle from '../components/globalStyle';
+
+const theme = {
+  whiteColor: true,
+  primary: true,
+};
 const store = setupStore();
 
 class MyApp extends App {
@@ -16,7 +17,7 @@ class MyApp extends App {
     return (
       <Provider store={store}>
         <ThemeProvider theme={theme}>
-          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+          <GlobalStyle />
           <Component {...pageProps} />
         </ThemeProvider>
       </Provider>
