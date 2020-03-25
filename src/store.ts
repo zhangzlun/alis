@@ -5,9 +5,10 @@ import {
   combineReducers,
 } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
+import navModule from './modules/navModules';
 
 export const rootReducer = combineReducers({
-  // サンプルを追加するのであれば記述
+  nav: navModule,
 });
 
 const setupStore = (): EnhancedStore => {
