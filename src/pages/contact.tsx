@@ -1,24 +1,41 @@
 import React from 'react';
 import { NextPage } from 'next';
-import { useRouter } from 'next/router';
+import styled from 'styled-components';
+import DefaultLayout from '../layouts/DefaultLayout';
 
-interface Props {
-  userAgent?: string;
-}
+const Contact: NextPage<{}> = () => (
+  <DefaultLayout>
+    <Test />
+    <Msg1>送信完了いたしました。</Msg1>
+    <Test />
+    <Msg2>
+      <p>お問い合わせありがとうございました。</p>
+      <p>担当者より、後ほどご連絡させていただきます。</p>
+      <p>しばらくお待ちください。</p>
+    </Msg2>
+    <span>
+      (通常5営業日以内に回答させていただきますが、ご相談内容によりましては回答に時間がかかる場合や回答できない場合がありますことを予めご了承ください。)
+    </span>
+  </DefaultLayout>
+);
 
-const Contact: NextPage<Props> = ({ userAgent }) => {
-  const router = useRouter();
-  const { pid } = router.query;
+const Msg1 = styled.b`
+  font-size: 50px;
+  color: red;
+  display: block;
+  font-weight: 600;
+`;
 
-  console.log(router);
+const Msg2 = styled.b`
+  font-size: 20px;
+  color: black;
+  & p {
+    margin-bottom: 15px;
+  }
+`;
 
-  return (
-    <main>
-      Your user agent:
-      {userAgent}
-      {pid}
-    </main>
-  );
-};
+const Test = styled.div`
+  height: 30px;
+`
 
 export default Contact;

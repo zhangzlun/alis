@@ -1,10 +1,12 @@
 import React, { FunctionComponent } from 'react';
+import { NextPage } from 'next';
 import DefaultLayout from '../layouts/DefaultLayout';
 
-const Home: FunctionComponent<{}> = () => (
+const Home: NextPage<{}> = () => (
   <DefaultLayout>
-    132
+    home
   </DefaultLayout>
 );
+
 
 export default Home;

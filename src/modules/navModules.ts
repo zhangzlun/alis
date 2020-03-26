@@ -7,7 +7,7 @@ export type NavModuleType = {
 };
 
 const defaultData = [
-  ['ホーム', 'Home'],
+  ['ホーム', 'index'],
   ['会社概要', 'Company'],
   ['採用情報', 'Recruit'],
   ['事業内容', 'Service'],

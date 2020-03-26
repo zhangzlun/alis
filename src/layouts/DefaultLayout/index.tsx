@@ -1,20 +1,26 @@
-import React, { Component } from 'react';
+import React  from 'react';
+import styled from 'styled-components';
+import MenuNav from '../../components/menuNav';
+import Footer from '../../components/footer';
+import media, { desktop } from '../../components/mediaStyle';
 
-import TopNav from '../../components/TopNav';
-// import Footer from './components/Footer';
-
-// eslint-disable-next-line react/prefer-stateless-function
-class DefaultLayout extends Component {
-  render(): JSX.Element {
-    const { children } = this.props;
-    return (
-      <>
-        <TopNav />
-        {children}
-        {/* <Footer /> */}
-      </>
-    );
-  }
+export const DefaultLayout = ({ children }) => {
+  return (
+    <TYY>
+      <MenuNav />
+      {children}
+      <Footer />
+    </TYY>
+  );
 }
+
+const TYY = styled.div`
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100vh;
+  width: ${desktop}px;
+  ${media.less(desktop)`width: 100%;`}
+`;
 
 export default DefaultLayout;
