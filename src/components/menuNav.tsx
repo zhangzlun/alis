@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import { NavModuleType } from '../modules/navModules';
 import Link from 'next/link';
+import { NavModuleType } from '../modules/navModules';
 
 export const MenuNav: FunctionComponent<NavModuleType> = ({ navlsit }) => (
   <Header>

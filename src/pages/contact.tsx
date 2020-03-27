@@ -36,6 +36,6 @@ const Msg2 = styled.b`
 
 const Test = styled.div`
   height: 30px;
-`
+`;
 
 export default Contact;

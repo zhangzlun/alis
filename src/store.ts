@@ -6,9 +6,11 @@ import {
 } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import navModule from './modules/navModules';
+import newsModule from "./modules/newsModules";
 
 export const rootReducer = combineReducers({
   nav: navModule,
+  news: newsModule,
 });
 
 const setupStore = (): EnhancedStore => {
