@@ -28,9 +28,7 @@ export const MenuNav: FunctionComponent<NavModuleType> = ({ navlsit }) => (
           <ul className="navbar-nav">
             {navlsit.map((value) => (
               <li className="nav-item active">
-                <Link href={value[1]}>
-                  {value[0]}
-                </Link>
+                <Link href={value[1]}>{value[0]}</Link>
                 <span className="sr-only">(current)</span>
               </li>
             ))}

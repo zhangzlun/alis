@@ -1,14 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-export const Footer: FunctionComponent<{}> = () => {
-  return (
-    <TFooter>
-
-      <LFooter></LFooter>
-    </TFooter>
-  );
-};
+export const Footer: FunctionComponent<{}> = () => (
+  <TFooter>
+    <LFooter />
+  </TFooter>
+);
 
 const TFooter = styled.div`
   background: #d78a41;

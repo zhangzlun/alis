@@ -10,6 +10,6 @@ const ProviderWrapper = ({ children }) => (
     <GlobalStyle />
     {children}
   </Provider>
-)
+);
 
 export default ProviderWrapper;
