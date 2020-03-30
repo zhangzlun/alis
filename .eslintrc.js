@@ -44,10 +44,10 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn', // 檢查 effect 的相依性
     "react/jsx-filename-extension": [1, {"extensions": [".ts", ".tsx"]}],
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-    "import/extensions": ["error", "never" ],
+    "import/extensions": ["error", "never"],
     "typescript-eslint/no-explicit-any": "off",
     "react/jsx-props-no-spreading": "off",
-    "jsx-a11y/label-has-associated-control": [ 2, {
+    "jsx-a11y/label-has-associated-control": [2, {
       "labelComponents": ["CustomInputLabel"],
       "labelAttributes": ["label"],
       "controlComponents": ["CustomInput"],
@@ -55,6 +55,6 @@ module.exports = {
     }],
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/anchor-is-valid": 0,
-    "@typescript-eslint/interface-name-prefix": [1,{ "prefixWithI": "always" }]
+    "@typescript-eslint/interface-name-prefix": [1, {"prefixWithI": "always"}]
   }
 };

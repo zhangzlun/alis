@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import MenuNav from '../../components/menuNav';
-import Footer from '../../components/footer';
-import media, { desktop } from '../../components/style/mediaStyle';
+import MenuNav from '../../components/MenuNav';
+import Footer from '../../components/Footer';
+import media, { desktop } from '../../components/StyledComponents/mediaStyle';
 
 export const DefaultLayout = ({ children }) => {
   return (

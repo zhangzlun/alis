@@ -1,11 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Provider } from 'react-redux';
-import News from '../components/news';
-import setupStore from '../store';
+import News from '../components/News';
+import Provider from './Provider';
 
-const store = setupStore();
+const withProvider = (story) => <Provider>{story()}</Provider>;
 
-storiesOf('Task', module)
-  .addDecorator((story) => <Provider store={store}>{story()}</Provider>)
+storiesOf('News', module)
+  .addDecorator(withProvider)
   .add('default', () => <News />);

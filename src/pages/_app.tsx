@@ -3,7 +3,7 @@ import App, { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
 import setupStore from '../store';
-import GlobalStyle from '../components/style/globalStyle';
+import GlobalStyle from '../components/StyledComponents/globalStyle';
 
 const theme = {
   whiteColor: true,
