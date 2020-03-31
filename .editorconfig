@@ -1,5 +1,3 @@
-# 必要に応じて Prettier と競合が起きないように設定
-
 # editorconfig.org
 root = true
 
