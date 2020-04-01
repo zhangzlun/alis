@@ -4,11 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
 import setupStore from '../store';
 import GlobalStyle from '../components/StyledComponents/globalStyle';
+import theme from '~/theme';
 
-const theme = {
-  whiteColor: true,
-  primary: true,
-};
 const store = setupStore();
 
 class MyApp extends App {

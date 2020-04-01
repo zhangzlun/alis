@@ -2,7 +2,8 @@ import React, { FunctionComponent } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { NavModuleType } from '../modules/navModules';
-import Link from "next/link";
+import {Button} from "~/components/StyledComponents/shareStyle";
+
 
 export const MenuNav: FunctionComponent<NavModuleType> = ({navlsit}) => (
   <Header>
@@ -12,7 +13,6 @@ export const MenuNav: FunctionComponent<NavModuleType> = ({navlsit}) => (
     <HeaderLinkList>
       <ul>
         {navlsit.map((value) => (
-          <Link href={}
           <li>{value[0]}</li>
         ))}
       </ul>
@@ -24,7 +24,7 @@ const Header = styled.div`
   display: flex;
   height: 70px;
   background: #ffffff;
-  border-bottom: 5px solid #e74042;
+  border-bottom: 5px solid ${(props) => props.theme.borderColor};
   & div {
     display: inline-block;
     height: 100%;

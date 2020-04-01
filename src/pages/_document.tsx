@@ -36,7 +36,10 @@ class CustomDocument extends Document implements CustomDocumentInterface {
           <meta name="twitter:image" content={`${this.url}/ogp.png`} />
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+          <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          />
         </Head>
         <body>
           <Main />
