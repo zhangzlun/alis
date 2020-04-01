@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
 import setupStore from '../store';
 import GlobalStyle from '../components/StyledComponents/globalStyle';
-import theme from '~/theme';
+import theme from '../theme';
 
 const store = setupStore();
 

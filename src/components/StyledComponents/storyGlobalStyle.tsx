@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { Theme } from '~/theme/styled';
 
 const StoryGlobalStyle = createGlobalStyle`
   html, body{

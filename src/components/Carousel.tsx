@@ -2,13 +2,20 @@ import React, { FunctionComponent, useState } from 'react';
 import styled from 'styled-components';
 import { CarouselModuleType } from '~/modules/carouselModules';
 
-const testData: Array<> = [
+const testData = [
   { labelName: 'Label1', context: '内容-1', labelData: 'いつでもお客様に、「満足」・「安心」を1' },
   { labelName: 'Label2', context: '内容-2', labelData: 'いつでもお客様に、「満足」・「安心」を2' },
   { labelName: 'Label3', context: '内容-3', labelData: 'いつでもお客様に、「満足」・「安心」を3' },
+  { labelName: 'Label4', context: '内容-3', labelData: 'いつでもお客様に、「満足」・「安心」を4' },
 ];
 
-export const Carousel: FunctionComponent<CarouselModuleType> = () => {
+type styleProps = {
+  currently: string;
+  self: string;
+  zIndex?: string;
+};
+
+export const Carousel: FunctionComponent<{}> = () => {
   const [show, setShow] = useState(testData[0].labelName);
 
   return (
@@ -38,7 +45,7 @@ export const Carousel: FunctionComponent<CarouselModuleType> = () => {
 };
 
 const Carousels = styled.div`
-  background: ${(props) => props.theme.borderColor};
+  background: ${(props) => props.theme.colors.borderColor};
 `;
 
 const CarouselCards = styled.div`
@@ -52,16 +59,16 @@ const CarouselCardLabels = styled.div`
 `;
 
 const CarouselCard = styled.div.attrs({
-  index: ({ currently, self, theme }) => (
+  zIndex: ({ currently, self, theme }) => (
     currently === self
       ? theme.zIndex.high
       : theme.zIndex.low),
-})<{ currently?: string; self?: string }>`
+})<styleProps>`
   position: absolute;
   width: 100%;
   height: 100%;
   padding: 0 20px;
-  z-index: ${(props) => props.index};
+  z-index: ${(props: styleProps) => props.zIndex};
   background: ${({ theme }) => theme.colors.which};
 `;
 

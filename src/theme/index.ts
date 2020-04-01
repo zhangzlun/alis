@@ -1,6 +1,6 @@
 export const theme = {
   colors: {
-    which: '#f4f4f4',
+    which: '#fffefe',
     backgroundColor: '#0F2240',
     borderColor: '#2E528C',
     colorBtn: '#12418C',
