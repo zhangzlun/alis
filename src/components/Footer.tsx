@@ -9,16 +9,33 @@ export const Footer: FunctionComponent<{}> = () => (
         <img />
         <div>
           株式会社
-          All
+          <div>
+            All
+          </div>
         </div>
       </div>
       <span>2019</span>
     </FooterdLeft>
 
     <FooterdRight>
-      132
+    <div>
+        <img />
+        <div>
+          電話問い合わせ
+          <div>
+          090
+          </div>
+          <div>
+          メール
+          </div>
+          <div>
+          ＠
+          </div>
+        </div>
+      </div>
+      <span>map</span>
     </FooterdRight>
-  </Footerd>
+    </Footerd>
 );
 
 const Footerd = styled.div`
