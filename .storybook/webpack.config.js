@@ -7,11 +7,11 @@ module.exports = ({ config }) => {
     options: {
       presets: [require.resolve('babel-preset-react-app')]
     }
-  })
+  });
 
-  config.resolve.extensions.push('.ts', '.tsx')
+  config.resolve.extensions.push('.ts', '.tsx');
 
-  config.resolve.alias['~'] = resolve(__dirname, '../src')
+  config.resolve.alias['~'] = resolve(__dirname, '../src');
 
   return config
-}
+};

@@ -55,6 +55,12 @@ module.exports = {
     }],
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/anchor-is-valid": 0,
-    "@typescript-eslint/interface-name-prefix": [1, {"prefixWithI": "always"}]
+    "@typescript-eslint/interface-name-prefix": [1, {"prefixWithI": "always"}],
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        "allowSingleExtends": true
+      }
+    ]
   }
 };

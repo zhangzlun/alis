@@ -3,19 +3,17 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { INewsReducer } from '~/reducer/newsReducer';
 
-export const News: FunctionComponent<INewsReducer> = ({ newsList = [] }) => {
-  return (
-    <div>
-      {newsList.map((data) => (
-        <FGR>
-          <Data>{data.date}</Data>
-          <Cate>{data.cate}</Cate>
-          <TTl>{data.ttl}</TTl>
-        </FGR>
-      ))}
-    </div>
-  );
-};
+export const News: FunctionComponent<INewsReducer> = ({ newsList = [] }) => (
+  <div>
+    {newsList.map((data) => (
+      <FGR>
+        <Data>{data.date}</Data>
+        <Cate>{data.cate}</Cate>
+        <TTl>{data.ttl}</TTl>
+      </FGR>
+    ))}
+  </div>
+);
 
 const FGR = styled.div`
   margin: 20px;
