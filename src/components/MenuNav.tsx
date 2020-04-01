@@ -2,10 +2,8 @@ import React, { FunctionComponent } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { NavModuleType } from '../modules/navModules';
-import {Button} from "~/components/StyledComponents/shareStyle";
 
-
-export const MenuNav: FunctionComponent<NavModuleType> = ({navlsit}) => (
+export const MenuNav: FunctionComponent<NavModuleType> = ({ navlsit }) => (
   <Header>
     <HeaderLogo>
       <img alt="" src="images/logo.png" />
@@ -49,7 +47,7 @@ const HeaderLinkList = styled.div`
   & ul li {
     line-height: 70px;
     display: inline;
-    color: #394761;
+    color: ${(props) => props.theme.borderColor};
     margin-right: 15px;
     font-weight: 600;
   }
