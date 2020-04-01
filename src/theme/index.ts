@@ -1,12 +1,11 @@
 export const theme = {
   colors: {
     which: '#f4f4f4',
+    backgroundColor: '#0F2240',
+    borderColor: '#2E528C',
+    colorBtn: '#12418C',
+    fontColor: 'white',
   },
-  backgroundColor: '#0F2240',
-  borderColor: '#2E528C',
-  colorBtn: '#12418C',
-  fontColor: 'white',
-
   layout: {
     width: 960,
   },

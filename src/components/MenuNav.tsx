@@ -22,7 +22,7 @@ const Header = styled.div`
   display: flex;
   height: 70px;
   background: #ffffff;
-  border-bottom: 5px solid ${(props) => props.theme.borderColor};
+  border-bottom: 5px solid ${(props) => props.theme.colors.borderColor};
   & div {
     display: inline-block;
     height: 100%;
@@ -47,7 +47,7 @@ const HeaderLinkList = styled.div`
   & ul li {
     line-height: 70px;
     display: inline;
-    color: ${(props) => props.theme.borderColor};
+    color: ${(props) => props.theme.colors.borderColor};
     margin-right: 15px;
     font-weight: 600;
   }
