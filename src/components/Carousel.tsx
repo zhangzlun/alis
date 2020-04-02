@@ -1,6 +1,5 @@
 import React, { FunctionComponent, useState } from 'react';
 import styled from 'styled-components';
-import { CarouselModuleType } from '~/modules/carouselModules';
 
 const testData = [
   { labelName: 'Label1', context: '内容-1', labelData: 'いつでもお客様に、「満足」・「安心」を1' },
@@ -27,7 +26,6 @@ export const Carousel: FunctionComponent<{}> = () => {
           </CarouselCard>
         ))}
       </CarouselCards>
-
       <CarouselCardLabels>
         {testData.map((data) => (
           <CarouselCardLabel
