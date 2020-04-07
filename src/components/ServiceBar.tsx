@@ -1,10 +1,15 @@
 import React, { FunctionComponent } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faServer } from '@fortawesome/pro-solid-svg-icons';
 
 export const ServiceBar: FunctionComponent<{}> = () => {
   return (
     <Service>
-      <ServiceBox> icon システム・ソフトウェア受託開発事業</ServiceBox>
+      <ServiceBox>
+        <FontAwesomeIcon css={iconClass} icon={faServer} />
+        システム・ソフトウェア受託開発事業
+      </ServiceBox>
       <ServiceBox> icon SES（システムエンジニアリングサービス）事業</ServiceBox>
       <ServiceBox> icon システム運用・保守事業</ServiceBox>
       <ServiceBox> icon RPA（ロボットによる業務自動化）事業</ServiceBox>
@@ -12,6 +17,10 @@ export const ServiceBar: FunctionComponent<{}> = () => {
     </Service>
   );
 };
+
+const iconClass = css`
+  color: brown;
+`
 
 const Service = styled.div`
   display: flex;
